@@ -1,0 +1,85 @@
+/* GENERAL */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+/* Existing styles here ... */
+
+/* EXPERIENCE SECTION */
+
+.experience-details-container {
+  max-width: 1200px; /* Set maximum width for the container */
+  margin: 0 auto; /* Center align */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* Spacing between items */
+  justify-content: center; /* Align items in the center */
+}
+
+/* PROJECTS SECTION */
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
+/* Responsive Layout Fixes */
+.details-container {
+  flex: 0 1 calc(25% - 2rem); /* Default: 4 items per row */
+  margin: 1rem;
+  box-sizing: border-box; /* Include padding and borders in width calculation */
+}
+
+/* For larger screens (4 items per row) */
+@media (min-width: 1600px) {
+  .details-container {
+    flex: 0 1 calc(25% - 2rem);
+  }
+}
+
+/* For medium screens (2 items per row) */
+@media (max-width: 768px) {
+  .details-container {
+    flex: 0 1 calc(50% - 2rem);
+    max-width: calc(50% - 2rem);
+  }
+}
+
+/* For small screens (1 item per row) */
+@media (max-width: 480px) {
+  .details-container {
+    flex: 0 1 100%;
+    max-width: 100%;
+  }
+}
