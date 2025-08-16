@@ -9,6 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color : #F9CDAF; /*TODO: changed the overall background*/
 }
 
 html {
@@ -16,7 +17,7 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: rgb(116,92,90);/*TODO: old one was rgb(85, 85, 85);*/
 }
 
 /* TRANSITION */
@@ -46,7 +47,7 @@ nav {
 }
 
 a {
-  color: black;
+  color: rgb(116,92,90); /*TODO: this changes the navbar*/
   text-decoration: none;
   text-decoration-color: white;
 }
@@ -296,11 +297,20 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: white;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border: rgb(116,92,90) 0.1rem solid;
+  border-color: rgb(116,92,90);
   text-align: center;
+  background-color : pink;/*TODO: this colors the about boxes*/
+}
+.details-container2 {
+  padding: 1.5rem;
+  flex: 1;
+  border-radius: 2rem;
+  border: rgb(116,92,90) 0.1rem solid;
+  border-color: rgb(116,92,90);
+  text-align: center;
+  background-color : pink; /*TODO: this colors the experience boxes*/
 }
 
 .section-container {
@@ -361,7 +371,7 @@ article .icon {
 
 .color-container {
   border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+  background: pink; /*TODO: this colors the project boxes*/
 }
 
 .project-img {
