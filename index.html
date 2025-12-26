@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" type="image/png" href="./assets/logo.png">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">My Portfolio</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Nick Kamra</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Nick Kamra</h1>
+        <p class="section__text__p2">Behavioral Data Scientist</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/nicholas-kamra-4b9253256/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/yckamra'"
+          />
+          <img
+                  src="./assets/leetcode.png"
+                  alt="My Leetcode profile"
+                  class="icon"
+                  onclick="location.href='https://leetcode.com/u/thekamra/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container2">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>8 months <br />Apprentice AI Research</p>
+            </div>
+            <div class="details-container2">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Concordia University<br />B.Sc. in Computer Science </p>
+            </div>
+          </div>
+          <div style="text-align: center" class="text-container">
+            <p>
+            <p>At the crossroads of <strong>machine learning</strong>, <strong>data science</strong>, and <strong>behavioral economics</strong>, you start to find <strong>patterns</strong> in how we shop, scroll, engage, click, and express ourselves. I am passionate about finding these <strong>deep-rooted behaviors</strong> using ML and data experimentation to increase not just click-thru rates, reduce shopping cart churn, or creating dopamine feedback loops, but to look under the hood of my own mind and explore the <strong>"why"</strong> of these levers of behavior.</p>
+            <br>
+            <p>When I'm not exploring behavior or building machines, you can find me doing my <strong>bucket list</strong>. This has brought me to getting my <strong>Class A skydiving license</strong>, <strong>catfish noodling</strong> in the river bottoms of Oklahoma for blue cat and flatheads, to <strong>spelunking</strong> in Pettyjohn's Cave in Georgia, making it all the way to the <strong>Echo Room</strong> a mile or two in.</p>
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Languages</h2>
+            <div class="article-container">
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C#</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Libraries, Engines, and Frameworks</h2>
+            <div class="article-container">
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PyTorch</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Unity</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Matplotlib</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                />
+                <div>
+                  <h3>pandas</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                />
+                <div>
+                  <h3>BigQuery</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                />
+                <div>
+                  <h3>Google Cloud Run</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                />
+                <div>
+                  <h3>FastAPI</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Docker</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                      src="./assets/project-1.png"
+                      alt="Project 1"
+                      class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Flappy Bird Clone with Genetic Neural Network</h2>
+            <div class="btn-container">
+              <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/yckamra/Flappy-Bird-Clone'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                      src="./assets/project-2.png"
+                      alt="Project 2"
+                      class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">C# Supervised Neural Network Library</h2>
+            <div class="btn-container">
+              <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/yckamra/MLLibrary'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                      src="./assets/project-3.png"
+                      alt="Project 3"
+                      class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Digit Recognizer with Multi-Class Classification</h2>
+            <div class="btn-container">
+              <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/yckamra/MNIST_Digit_Recognizer'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                      src="./assets/project-4.png"
+                      alt="Project 4"
+                      class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Colorectal Cancer Detection with ResNet CNN</h2>
+            <div class="btn-container">
+              <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/yckamra/Colorectal-Cancer-Detection-ResNet18'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                      src="./assets/coming-soon.png"
+                      alt="Project 5"
+                      class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">???</h2>
+            <div class="btn-container">
+              <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/yckamra'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                      src="./assets/coming-soon.png"
+                      alt="Project 6"
+                      class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">???</h2>
+            <div class="btn-container">
+              <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/yckamra'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <img
+              src="./assets/arrow.png"
+              alt="Arrow icon"
+              class="icon arrow"
+              onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">yckamra@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/nicholas-kamra-4b9253256/">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/medium.png"
+            alt="Blog icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://medium.com/@yckamra">Data Science Blog</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!--Life is good! Website template from @howtobecomeadeveloper on Youtube, so nice of him-->
+      <p> © 2025 Nicholas Kamra. Built with ❤ and caffeine.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
