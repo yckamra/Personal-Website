@@ -332,6 +332,10 @@ section {
   position: relative;
 }
 
+#skills {
+  position: relative;
+}
+
 .experience-sub-title {
   color: #7c734c;
   font-weight: 600;
@@ -365,6 +369,93 @@ article {
 article .icon {
   cursor: default;
 }
+
+/* WORK EXPERIENCE & EDUCATION SECTION */
+
+.work-education-section {
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+  border-bottom: 2px solid #d4c4a0;
+}
+
+.work-education-section:last-of-type {
+  border-bottom: none;
+}
+
+.section-subtitle {
+  color: #7c734c;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.timeline-container {
+  position: relative;
+}
+
+.timeline-item {
+  display: flex;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-left: 3rem;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #b69d68;
+  border: 3px solid #7c734c;
+}
+
+.timeline-marker::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 2px;
+  height: 2rem;
+  background-color: #d4c4a0;
+  transform: translateX(-50%);
+}
+
+.timeline-item:last-child .timeline-marker::after {
+  display: none;
+}
+
+.timeline-content {
+  flex: 1;
+}
+
+.job-title {
+  color: #7c734c;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.company-name {
+  color: #b69d68;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.date-range {
+  color: #9a8968;
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.job-description {
+  color: #7c734c;
+  line-height: 1.5;
+}
+
+
 
 /* PROJECTS SECTION */
 
