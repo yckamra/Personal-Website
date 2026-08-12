@@ -373,13 +373,8 @@ article .icon {
 /* WORK EXPERIENCE & EDUCATION SECTION */
 
 .work-education-section {
-  margin-bottom: 3rem;
-  padding: 2rem 0;
-  border-bottom: 2px solid #d4c4a0;
-}
-
-.work-education-section:last-of-type {
-  border-bottom: none;
+  margin-bottom: 0;
+  padding: 0;
 }
 
 .section-subtitle {
